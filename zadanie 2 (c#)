@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            var rand = new Random();
+            int r = rand.Next(5);
+
+            Console.WriteLine("Zgadnij cyfrę");
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            for (int i = 0; i <= 0; i++)
+                if (a == r)
+                {
+                    Console.WriteLine("Wygrałeś!");
+                }
+                else if (b == r)
+                {
+                    Console.WriteLine("Wygrałeś!");
+                }
+                else if (c == r)
+                {
+                    Console.WriteLine("Wygrałeś!");
+                }
+                else
+                {
+                    Console.WriteLine("Przegrałeś!");
+                }
+            Console.Write("Cyfra to: " + r);
+            Console.WriteLine();
+            Console.ReadKey();
+        }
+    }
+}
