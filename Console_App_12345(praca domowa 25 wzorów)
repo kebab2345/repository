@@ -1,0 +1,319 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Console_App_12345
+{
+    internal class Program
+    {
+
+        static void add(double a, double b)
+        {
+            Console.WriteLine("Dodawanie:");
+            Console.WriteLine(a + b);
+        }
+
+        static double substract(double a, double b)
+        {
+            Console.WriteLine("Odejmowanie:");
+            return a - b;
+        }
+
+        static double multiply()
+        {
+            Console.WriteLine("Mnożenie:");
+            Console.WriteLine("Enter a and b");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            return a * b;
+        }
+
+        static void divide()
+        {
+            Console.WriteLine("Dzielenie:");
+            Console.WriteLine("Enter a and b");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            Console.WriteLine(a / b);
+        }
+
+        static void kwadrat(double a)
+        {
+            Console.WriteLine("Kwadrat z liczby 10:");
+            Console.WriteLine(a * a);
+        }
+
+        static void sześcian(double a)
+        {
+            Console.WriteLine("Sześcian z liczby 10:");
+            Console.WriteLine(a * a * a);
+        }
+
+        static void Twierdzenie_Pitagorasa()
+        {
+            Console.WriteLine("Twierdzenie Pitagorasa:");
+            Console.WriteLine("Enter a and b");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double a2 = a * a;
+            double b2 = b * b;
+            double c = a2 + b2;
+
+            Console.WriteLine(a + "^2 + " + b + "^2 = " + c);
+        }
+
+        static void Skrócone_mnożenie1()
+        {
+            Console.WriteLine("Wzór skróconego mnożenia (a+b)^2:");
+            Console.WriteLine("Enter a and b");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double a2 = a * a;
+            double b2 = b * b;
+            double a3 = 2 * a * b;
+            double c = a2 + b2 + a3;
+
+            Console.WriteLine("( " + a + " + " + b + " )" + "^2 = " + a + "^2 + " + 2 * a * b + " + " + b + "^2 = " + c);
+        }
+
+        static double Obwód_kwadratu()
+        {
+            Console.WriteLine("Obwód kwadratu/rombu:");
+            Console.WriteLine("Enter a");
+            double a = double.Parse(Console.ReadLine());
+            return a * 4;
+        }
+
+        static double Obwód_Prostokąta()
+        {
+            Console.WriteLine("Obwód prostokąta/równoległoboku:");
+            Console.WriteLine("Enter a and b");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            return a * 2 + b * 2;
+        }
+
+        static double Obwód_Trójkąta()
+        {
+            Console.WriteLine("Obwód trójkąta:");
+            Console.WriteLine("Enter a, b and c");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+            return a + b + c;
+        }
+
+        static double Obwód_Trapezu()
+        {
+            Console.WriteLine("Obwód trapezu:");
+            Console.WriteLine("Enter a, b, c and d");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+            double d = double.Parse(Console.ReadLine());
+            return a + b + c + d;
+        }
+
+        static double Obwód_Koła()
+        {
+            Console.WriteLine("Obwód koła:");
+            Console.WriteLine("Enter r");
+            double r = double.Parse(Console.ReadLine());
+            double Pi = Math.PI;
+            return 2 * Pi * r;
+        }
+
+        static double Pole_kwadratu()
+        {
+            Console.WriteLine("Pole kwadratu:");
+            Console.WriteLine("Enter a");
+            double a = double.Parse(Console.ReadLine());
+            return a * a;
+        }
+
+        static double Pole_Prostokąta()
+        {
+            Console.WriteLine("Pole prostokąta/równoległoboku:");
+            Console.WriteLine("Enter a and b/h");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            return a * b;
+        }
+
+        static void Pole_Trójkąta()
+        {
+            Console.WriteLine("Pole trójkąta:");
+            Console.WriteLine("Enter a and h");
+            double a = double.Parse(Console.ReadLine());
+            double h = double.Parse(Console.ReadLine());
+            Console.WriteLine(a * h / 2);
+        }
+
+        static void Pole_Trapezu()
+        {
+            Console.WriteLine("Pole trapezu:");
+            Console.WriteLine("Enter a, b and h");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double h = double.Parse(Console.ReadLine());
+            double ab = a + b;
+            Console.WriteLine(ab * h / 2);
+        }
+
+        static void Pole_Rombu()
+        {
+            Console.WriteLine("Pole Rombu:");
+            Console.WriteLine("Enter d1 and d2");
+            double d1 = double.Parse(Console.ReadLine());
+            double d2 = double.Parse(Console.ReadLine());
+            Console.WriteLine(d1 * d2 / 2);
+        }
+
+        static double Pole_Koła()
+        {
+            Console.WriteLine("Pole koła:");
+            Console.WriteLine("Enter r");
+            double r = double.Parse(Console.ReadLine());
+            double Pi = Math.PI;
+            double r2 = r * r;
+            return Pi * r2;
+        }
+
+        static void Pole_Sześcianu()
+        {
+            Console.WriteLine("Pole sześcianu:");
+            Console.WriteLine("Enter a");
+            double a = double.Parse(Console.ReadLine());
+            double a2 = a * a;
+            Console.WriteLine(6 * a2);
+        }
+
+        static void Pole_Prostopadłościanu()
+        {
+            Console.WriteLine("Pole prostopadłościanu:");
+            Console.WriteLine("Enter a, b and c");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+            double a2 = 2 * a * b;
+            double b2 = 2 * a * c;
+            double c2 = 2 * b * c;
+            Console.WriteLine(a2 + b2 + c2);
+        }
+
+        static double Pole_Walca()
+        {
+            Console.WriteLine("Pole walca:");
+            Console.WriteLine("Enter r and h");
+            double r = double.Parse(Console.ReadLine());
+            double h = double.Parse(Console.ReadLine());
+            double Pi = Math.PI;
+            double r2 = r * r;
+            double Pp = 2 * Pi * r2;
+            double Pb = 2 * Pi * r * h;
+            return Pp + Pb;
+        }
+
+        static void Objętość_Sześcianu()
+        {
+            Console.WriteLine("Objętość sześcianu:");
+            Console.WriteLine("Enter a");
+            double a = double.Parse(Console.ReadLine());
+            double a3 = a * a * a;
+            Console.WriteLine(a3);
+        }
+
+        static void Objętosć_Prostopadłościanu()
+        {
+            Console.WriteLine("Objętość prostopadłościanu:");
+            Console.WriteLine("Enter a, b and c");
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+            Console.WriteLine(a * b * c);
+        }
+
+        static double Objętość_Walca()
+        {
+            Console.WriteLine("Objętość walca:");
+            Console.WriteLine("Enter r and h");
+            double r = double.Parse(Console.ReadLine());
+            double h = double.Parse(Console.ReadLine());
+            double Pi = Math.PI;
+            double r2 = r * r;
+            return Pi * r2 * h;
+        }
+
+        static void Main(string[] args)
+        {
+
+            add(10, 10);
+            Console.WriteLine("--------------------------------");
+            double a = substract(10, 10);
+            Console.WriteLine(a);
+            Console.WriteLine("--------------------------------");
+            double b = multiply();
+            Console.WriteLine(b);
+            Console.WriteLine("--------------------------------");
+            divide();
+            Console.WriteLine("--------------------------------");
+            kwadrat(10);
+            Console.WriteLine("--------------------------------");
+            sześcian(10);
+            Console.WriteLine("--------------------------------");
+            Skrócone_mnożenie1();
+            Console.WriteLine("--------------------------------");
+
+            Twierdzenie_Pitagorasa();
+            Console.WriteLine("--------------------------------");
+            double c = Obwód_kwadratu();
+            Console.WriteLine(c);
+            Console.WriteLine("--------------------------------");
+            double d = Obwód_Prostokąta();
+            Console.WriteLine(d);
+            Console.WriteLine("--------------------------------");
+            double e = Obwód_Trójkąta();
+            Console.WriteLine(e);
+            Console.WriteLine("--------------------------------");
+            double f = Obwód_Trapezu();
+            Console.WriteLine(f);
+            Console.WriteLine("--------------------------------");
+            double g = Obwód_Koła();
+            Console.WriteLine(g);
+            Console.WriteLine("--------------------------------");
+            double h = Pole_kwadratu();
+            Console.WriteLine(h);
+            Console.WriteLine("--------------------------------");
+            double i = Pole_Prostokąta();
+            Console.WriteLine(i);
+            Console.WriteLine("--------------------------------");
+            Pole_Trójkąta();
+            Console.WriteLine("--------------------------------");
+            Pole_Trapezu();
+            Console.WriteLine("--------------------------------");
+            Pole_Rombu();
+            Console.WriteLine("--------------------------------");
+            double j = Pole_Koła();
+            Console.WriteLine(j);
+            Console.WriteLine("--------------------------------");
+            Pole_Sześcianu();
+            Console.WriteLine("--------------------------------");
+            Pole_Prostopadłościanu();
+            Console.WriteLine("--------------------------------");
+            double k = Pole_Walca();
+            Console.WriteLine(k);
+            Console.WriteLine("--------------------------------");
+            Objętość_Sześcianu();
+            Console.WriteLine("--------------------------------");
+            Objętosć_Prostopadłościanu();
+            Console.WriteLine("--------------------------------");
+            double l = Objętość_Walca();
+            Console.WriteLine(l);
+
+            Console.ReadKey();
+
+        }
+    }
+}
